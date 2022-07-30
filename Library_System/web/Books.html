@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Simple Library System</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <style>
+            
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: arial;
+                box-sizing: border-box;
+            }
+            
+            body{
+                
+                height: 100vh;
+                display: grid;
+                place-items: center;
+                background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4)),url(11.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+            
+            table{
+                
+                width: 600px;
+                opacity: 0.8;
+            }
+            
+            table,td{
+                padding: 20px;
+                border: 1px solid lightgray;
+                border-collapse: collapse;
+                text-align: center;
+                cursor: pointer;
+            }
+            
+            td{
+                font-size: 18px;
+                
+            }
+            
+            tr:nth-child(odd){
+                
+                background-color: lightblue;
+            }
+            
+            tr:nth-child(odd):hover{
+                
+                background-color: dodgerblue;
+                color:white;
+                transform: scale(1.5);
+                transition: transform 300ms ease-in;
+                
+            }
+            
+            tr:nth-child(even){
+                background-color: #ededed;
+            }
+            
+            tr:nth-child(even):hover{
+                
+                background-color: limegreen;
+                transform: scale(1.5);
+                transition: transform 300ms ease-in;
+            }
+           
+        </style>
+       
+    </head>
+   
+    <body>
+        <h1>- ADD BOOKS PAGE -</h1>
+        
+        
+        <!--First you add the form and after you create the table.......-->
+        
+        
+        <form action="Addbooks.jsp" method="POST">
+            
+            <!--paste here-->
+             <table border="2" width="1" cellspacing="1">
+        
+            <tbody>
+                <tr>
+                    <td>Title</td>
+                    <td><input type="text" name="title" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Author</td>
+                    <td><input type="text" name="author" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Publisher</td>
+                    <td><input type="text" name="pub" value="" /></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="ADD BOOK" /></td>
+                    <td><input type="reset" value="CLEAR" /></td>
+                </tr>
+            </tbody>
+             </table>
+            
+        </form>
+       
+    </body>
+    
+    
+</html>
